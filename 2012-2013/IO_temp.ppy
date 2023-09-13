@@ -1,0 +1,27 @@
+## individual inputs 
+a, b = map(int, input().split())
+
+## a list of values 
+days = list(map(int, input().split()))
+
+
+## for list of lists 
+# Initialize an empty minefield as a list of lists
+minefield = []
+
+# Read each line of the minefield and append it to the minefield list
+for _ in range(n):
+    row = list(map(int, input().split()))
+    minefield.append(row)
+    
+    
+    
+    
+    
+    
+    
+    
+# Call the minesweeper function and print the result
+result = minesweeper([n, m, minefield])
+for row in result:
+    print("".join(map(str, row)))
